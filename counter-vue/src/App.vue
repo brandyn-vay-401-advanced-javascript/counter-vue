@@ -1,16 +1,24 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+  <div>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <h1>Counter</h1>
+    <Counter />
   </div>
 </template>
 
+<script>
+import Counter from './components/counter.vue'
+
+export default {
+  components: {
+    Counter
+  }
+}
+</script>
+
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+div {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
